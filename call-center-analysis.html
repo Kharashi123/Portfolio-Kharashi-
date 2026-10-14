@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Call Center Performance Analysis | Portfolio Case Study</title>
+<style>
+:root{--ink:#252525;--muted:#646464;--accent:#b65e3c;--paper:#fbf8f3;--card:#fff;--line:#e8dfd6}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif}
+main{max-width:920px;margin:auto;padding:36px 20px 60px}
+a{color:var(--accent)}.back{display:inline-block;margin-bottom:22px}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-size:.78rem;font-weight:bold}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:.35em 0}
+h2{margin-top:34px;font-size:1.35rem}
+p,li{color:#353535}.meta{color:var(--muted);margin-bottom:22px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:18px 0}
+img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi span{display:block;color:var(--muted);font-size:.9rem}.kpi strong{font-size:1.7rem}
+.note{background:#f4e9df;border-left:4px solid var(--accent);padding:14px 16px;border-radius:4px}
+footer{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../index.html">← Back to portfolio</a>
+<div class="eyebrow">Data Analytics · Case Study</div>
+<h1>Call Center Performance Analysis</h1>
+<p class="meta">Previous-work sample · Dashboard screenshot</p>
+
+<section class="panel">
+<h2 style="margin-top:0">Project overview</h2>
+<p>This dashboard brings together call volume, call outcomes, agent activity, enquiry topics and monthly trends in one visual report. It illustrates how operational metrics can be presented to support further investigation of call-centre performance.</p>
+<p><strong>Tool:</strong> Power BI (include this only if you can confirm that you created the dashboard in Power BI).</p>
+</section>
+
+<h2>Dashboard screenshot</h2>
+<img src="call-center-dashboard.jpg" alt="Screenshot of a call center performance dashboard">
+
+<h2>Metrics visible in the screenshot</h2>
+<div class="grid">
+<div class="kpi"><span>Total calls</span><strong>5,000</strong></div>
+<div class="kpi"><span>Answered calls</span><strong>4,054</strong></div>
+<div class="kpi"><span>Rejected calls</span><strong>946</strong></div>
+<div class="kpi"><span>Resolved calls</span><strong>3,646</strong></div>
+<div class="kpi"><span>Unresolved calls</span><strong>1,354</strong></div>
+</div>
+<p>Based on the displayed counts, answered calls represent 81.08% of total calls and rejected calls represent 18.92%.</p>
+
+<h2>Questions the dashboard can help explore</h2>
+<ul>
+<li>What proportion of calls were answered or rejected?</li>
+<li>How does call volume vary across agents?</li>
+<li>Which enquiry topics have the highest call volumes?</li>
+<li>How does call volume change from month to month?</li>
+<li>How do resolved and unresolved call counts compare?</li>
+</ul>
+
+<h2>Preliminary observations</h2>
+<ul>
+<li>The displayed answered-call count is approximately 81.08% of total calls.</li>
+<li>Streaming and Technical Support appear among the highest-volume topics in the screenshot.</li>
+<li>Call volumes differ across the agents shown.</li>
+<li>The monthly chart appears to decline between January and March.</li>
+</ul>
+<p>These are observations of the screenshot only. They do not establish why the trends occurred or prove that one agent performed better than another.</p>
+
+<h2>Potential next steps for the business</h2>
+<ul>
+<li>Investigate why calls are rejected and whether patterns vary by time or topic.</li>
+<li>Review unresolved calls to identify possible follow-up needs.</li>
+<li>Compare agent workloads alongside quality and resolution measures, not call volume alone.</li>
+<li>Validate monthly values before making operational decisions.</li>
+</ul>
+
+<h2>Limitations</h2>
+<div class="note">
+<p style="margin-top:0">The original working file and source dataset are no longer available. The screenshot's underlying calculations, data preparation steps and detailed findings have not been independently verified. The average answer-speed gauge also needs validation because its displayed formatting and units are unclear.</p>
+<p style="margin-bottom:0">This page documents a previous-work sample; it does not claim that the original dataset or interactive report has been recovered.</p>
+</div>
+
+<footer>Portfolio case study · Update this page if the original dataset or report becomes available.</footer>
+</main>
+</body>
+</html>
