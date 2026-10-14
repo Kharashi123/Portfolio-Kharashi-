@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retail Sales Performance Analysis | Portfolio</title>
+<style>
+:root{--ink:#34231f;--clay:#b85c38;--cream:#f7f0e8;--line:#e3d2c6;}
+*{box-sizing:border-box}body{margin:0;background:#fbf8f4;color:var(--ink);font:16px/1.65 Arial,sans-serif}
+header{background:var(--ink);color:white;padding:42px 20px}.wrap{max-width:960px;margin:auto;padding:0 20px}
+.kicker{color:#e6b39b;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0}h2{margin-top:34px;color:var(--clay)}.sub{max-width:720px;color:#f3e6df}
+main{padding:24px 0 56px}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}
+.kpi{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}.kpi span{display:block;font-size:12px;color:#735c53;text-transform:uppercase;letter-spacing:1px}.kpi strong{font-size:25px;color:var(--clay)}
+section{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;margin:18px 0}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px;border-bottom:1px solid #eee}th{background:var(--cream)}.callout{border-left:4px solid var(--clay);padding:12px 16px;background:var(--cream)}a{color:var(--clay)}footer{font-size:13px;color:#6e5c55;margin-top:28px}
+</style></head><body>
+<header><div class="wrap"><div class="kicker">Data Analytics Case Study · Excel</div>
+<h1>Retail Sales Performance Analysis</h1><p class="sub">A sales and profitability review of the Sample Superstore retail dataset, focused on category performance, regional contribution, yearly trends, and loss-making sub-categories.</p></div></header>
+<main class="wrap">
+<div class="kpis">
+<div class="kpi"><span>Total Sales</span><strong>$2,297,201</strong></div>
+<div class="kpi"><span>Total Profit</span><strong>$286,397</strong></div>
+<div class="kpi"><span>Profit Margin</span><strong>12.5%</strong></div>
+<div class="kpi"><span>Unique Orders</span><strong>5,009</strong></div>
+<div class="kpi"><span>Customers</span><strong>793</strong></div>
+</div>
+<section><h2>1. Business Question</h2><p>Which product categories and regions contribute most to sales and profit, how has performance changed over time, and which sub-categories may need a profitability review?</p></section>
+<section><h2>2. Dataset & Tools</h2><ul><li><b>Source file:</b> Sample-Superstore.csv provided for this analysis.</li><li><b>Coverage:</b> 9,994 order-line records, with order and shipping dates spanning 2014–2017.</li><li><b>Fields used:</b> Order ID, dates, region, category, sub-category, sales, quantity, discount, and profit.</li><li><b>Tools:</b> Excel-oriented dashboard design and summary analysis; the supplied CSV was used to calculate the figures.</li></ul></section>
+<section><h2>3. Key Performance Indicators</h2><p>Total sales, total profit, profit margin (total profit divided by total sales), unique orders, and unique customers were calculated from the dataset.</p>
+<table><thead><tr><th>KPI</th><th>Result</th></tr></thead><tbody>
+<tr><td>Total sales</td><td>$2,297,200.86</td></tr><tr><td>Total profit</td><td>$286,397.02</td></tr><tr><td>Profit margin</td><td>12.47%</td></tr><tr><td>Quantity sold</td><td>37,873</td></tr><tr><td>Unique orders</td><td>5,009</td></tr><tr><td>Unique customers</td><td>793</td></tr></tbody></table></section>
+<section><h2>4. Sales & Profit by Category</h2><table><thead><tr><th>Category</th><th>Sales</th><th>Profit</th><th>Profit margin</th></tr></thead><tbody><tr><td>Technology</td><td>$836,154</td><td>$145,455</td><td>17.4%</td></tr><tr><td>Furniture</td><td>$742,000</td><td>$18,451</td><td>2.5%</td></tr><tr><td>Office Supplies</td><td>$719,047</td><td>$122,491</td><td>17.0%</td></tr></tbody></table>
+<p class="callout"><b>Finding:</b> Technology had the highest category sales ($836,154) and profit ($145,455). Furniture's margin was notably lower at 2.5%, despite nearly $742,000 in sales.</p></section>
+<section><h2>5. Regional Performance</h2><p>The West was the highest-sales region at $725,458, followed by the East at $678,781. Regional sales and profit are included in the workbook's Region Summary tab.</p></section>
+<section><h2>6. Yearly Trend</h2><table><thead><tr><th>Year</th><th>Sales</th><th>Profit</th><th>Unique orders</th></tr></thead><tbody><tr><td>2014</td><td>$484,247</td><td>$49,544</td><td>969</td></tr><tr><td>2015</td><td>$470,533</td><td>$61,619</td><td>1,038</td></tr><tr><td>2016</td><td>$609,206</td><td>$81,795</td><td>1,315</td></tr><tr><td>2017</td><td>$733,215</td><td>$93,439</td><td>1,687</td></tr></tbody></table>
+<p class="callout">Sales increased from $484,247 in 2014 to $733,215 in 2017. This is an observed trend in the dataset, not proof of the cause.</p></section>
+<section><h2>7. Sub-category to Investigate</h2><p>Tables had the lowest total profit at $-17,725.48. Bookcases and Supplies also recorded negative total profit. These are candidates for deeper analysis of discount levels, unit economics, and costs; the dataset alone does not establish the cause.</p></section>
+<section><h2>8. Recommendations</h2><ol><li>Review discounting and margin by product and order for Furniture, especially Tables and Bookcases.</li><li>Compare category-level profit margin alongside sales before prioritizing growth campaigns.</li><li>Examine regional and yearly trends monthly to identify when performance shifts occur.</li><li>Validate any operational changes against current, business-owned data before making decisions.</li></ol></section>
+<section><h2>9. Deliverable</h2><p>The accompanying Excel workbook contains a dashboard, cleaned data, and category, region, year, and sub-category summary tabs.</p></section>
+<footer>Data note: Values were calculated from the supplied CSV. The dataset is a sample retail dataset and should not be represented as actual company financial performance. Currency symbols are displayed as dollars to match the dataset convention.</footer>
+</div></main></body></html>
